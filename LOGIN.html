@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PUP ATHLETES</title>
+        <link rel="stylesheet" type="text/css" href="Design-LOGIN.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="PUPlogo">
+                <img src="PUPLogo.png">
+                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                <h2>The Country's First Polytechnic University</h2>
+            </div>
+
+            <nav class= "navbar">
+                <ul>
+                    <li><a href="Menu.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="LOGIN.html">Login</a></li>
+                    <li><a href="Reg.html">Registration</a></li>    
+                </ul>
+            </nav>
+        </header>
+
+        <div class="loginform">
+            <form action="/action_page.php">
+                <h1>LOGIN</h1>
+                <div class="forminput">
+                    <input type="text" placeholder="Student Number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" title="Enter a valid student number (e.g., 2021-08515-MN-0)" required>
+                </div>
+                <div class="forminput">
+                    <input type="text" placeholder="Athlete Number" pattern="\d{4}-[A-Z]{2}-\d" title="Enter a valid athlete number (e.g., 1234-MN-0)" required>
+                </div>
+                <div class="forminput">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="forminput">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="registration-link">
+                    <p>Not an athlete yet? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <main>
+            <h2></h2>
+        </main>
+    </body>
+
+</html>
