@@ -4,44 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Aesthetic Website</title>
+    <title>PUP Athlete Website</title>
 
     <style>
 
         body {
+            background-image: url("284422608_5054916684604294_7522294499720997223_n.jpg");
+            background-size: cover;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: white;
             color: #333;
+
         }
 
         header {
+            background-color: rgba(136, 7, 7, 0.473);
+            backdrop-filter: blur(20px);
             padding: 20px;
             text-align: center;
-            background-color: rgba(136, 7, 7, 0.473);
+            
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #ffd700;
+            background-color: rgb(255, 244, 244);
             padding: 10px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: rgba(136, 7, 7, 0.473);
+            font-weight: bold;
+            color: #800000;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 10px;
+            margin: 0 5px;
             border-radius: 5px;
-            transition: color 0.3s;
+            /*transition: color 0.1s;*/
         }
 
         nav a:hover {
-            color: #fff;
+            border: 2px inset #800000;
+            
         }
 
         section {
@@ -50,13 +57,23 @@
         }
 
         h1 {
-            color: #800000;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            color: white;
+            font-size: 1.6em;
+            margin-bottom: 0px;
+        }
+
+        h2{
+            color: white;
+            font-size: 1.6em;
+        }
+
+        h3{
+            color: #dedede;
+            font-size: 1.2em;
         }
 
         p {
-            color: #333;
+            color: #989898;
             font-size: 1.2em;
             margin-bottom: 30px;
         }
@@ -87,9 +104,9 @@
 <body>
     <header>
         <div class="PUPlogo">
-            <img src="PUPLogo.jpg" width="300px" height="200px">
+            <img src="PUPLogo.png" width="110px" height="110px">
             <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
-            <h2>The Country's First Polytechnic University</h2>
+            <h3>The Country's First Polytechnic University</h3>
         </div>
     </header>
 
@@ -98,10 +115,11 @@
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
+        <a href="#">Login</a>
     </nav>
 
     <section>
-        <h1>Welcome to PUP Student Athelete Registration</h1>
+        <h2>Welcome to PUP Student Athelete Registration</h2>
         <p>Your captivating and engaging tagline goes here. Describe the uniqueness of your website.</p>
         <a href="#" class="getstarted-button">Get Started</a>
     </section>
