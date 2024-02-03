@@ -1,9 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
 body {
   margin: 0;
   background-image: url("284422608_5054916684604294_7522294499720997223_n.jpg");
   background-size: cover;
   background-position: center;
   align-items: center;
+  zoom:.70;
 }
 
 header {
@@ -31,77 +39,47 @@ main {
   padding: 30px;
   box-sizing: border-box;
 }
-
-.navbar ul {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  float: left;
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #000000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: medium;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container nav ul {
+  display: flex;
+}
+.nav-container nav li {
   margin-right: 20px;
 }
-
-.navbar ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-  font-family: "Poppins", sans-serif;
+.nav-container a {
+  font-size: 1.8rem;
+  color: #000000;
 }
-
-.navbar {
-  font-family: montserrat;
-}
-
-.navbar ul li a {
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  height: 80px;
-  width: 100%;
-  text-transform: uppercase;
-}
-
 .navbar a:hover {
   justify-content: center;
-  width: 115px;
+  width: 100px;
   background-color: rgba(255, 0, 0, 0.205);
-  font-size: 20px;
+  font-size: 30px;
   transition: 0.5s;
 }
-
-.navbar li {
-  padding: 2px;
-  float: left;
-}
-
-.PUPlogo img {
-  float: left;
-  width: 100px;
-  z-index: 4;
-  margin-left: 5px;
-  margin-top: 7px;
-}
-
-.PUPlogo h2,
-.PUPlogo h1 {
-  position: relative;
-  padding: 2px;
-  color: white;
-  margin: 0;
-  left: 10px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.863);
-  pointer-events: none;
-  z-index: 2;
+.button {
+  background-color: #ca2727;
+  padding: 10px 15px;
+  color: #ffffff !important;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .loginform form {
@@ -110,7 +88,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .loginform {
@@ -233,7 +211,7 @@ p {
   backdrop-filter: blur(20px);
   border-radius: 10px;
   color: #fff;
-  padding: 15px 37px 55px;
+  padding: 20px 37px 65px;
   box-sizing: border-box;
   margin: auto;
   margin-top: 50px;
@@ -253,9 +231,9 @@ p {
 
 .reg-input .input {
   position: relative;
-  width: 46%;
+  width: 47%;
   height: 50px;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .reg-input .input input {
@@ -264,9 +242,9 @@ p {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   outline: none;
-  font-size: 16px;
+  font-size: 19px;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 .reg-input .input input::placeholder {
@@ -276,12 +254,12 @@ p {
 .appform label {
   display: inline-block;
   font-size: 14.5px;
-  margin: 10px 0 23px;
+  margin: 11px 0 25px;
 }
 
 .appform label input {
   accent-color: #fff;
-  margin-right: 6px;
+  margin-right: 12px;
 }
 
 .appform .btn2 {
