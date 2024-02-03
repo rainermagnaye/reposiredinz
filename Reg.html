@@ -1,78 +1,80 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>PUP ATHLETES</title>
-        <link rel="stylesheet" type="text/css" href="Design-LOGIN.css">
+<head>
+  <meta charset="UTF-8">
+  <title>PUP ATHLETES</title>
+  <link rel="stylesheet" type="text/css" href="Design-LOGIN.css">
+</head>
+<body>
+  <header>
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <div class="logo">SINTANG ATLETA</div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="Menu.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="LOGIN.html">Login</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <a href="Finals.html" class="button">Sign In</a>
+      </div>
+    </div>
+  </header>
 
-    </head>
-    <body>
-        <header>
-            <div class="PUPlogo">
-                <img src="C:\Users\Justin\HTML codes\Finals\PUPLogo.png">
-                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
-                <h2>The Country's First Polytechnic University</h2>
-            </div>
-            <nav class= "navbar">
-                <ul>
-                    <li><a style="text-decoration:none" href="Menu.html">Home</a></li>
-                    <li><a style="text-decoration:none" href="About.html">About</a></li>
-                    <li><a style="text-decoration:none" href="LOGIN.html">Login</a></li>
-                    <li><a style="text-decoration:none" href="Finals.html">Registration</a></li>    
-                </ul>
-            </nav>
-            </header>
+  <div class="appform">
+    <form action="https://script.google.com/macros/s/AKfycbwv28nNTKd_QNibQ_kzKMLrM5F5kfbtqcRi2L4rOlTpZKLLYMjyrNCsjIasg5I7IR3U/exec" method="POST">
+      <h1>Registration Form</h1>
 
-            <div class="appform">
-                <form action="/action_page.php">
-                    <h1>Registration Form</h1>
+      <div class="reg-input">
+        <div class="input">
+          <input type="text" name="First Name" placeholder="First Name" required>
+        </div>
+        <div class="input">
+          <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+        <div class="input">
+          <input type="date" name="Birthdate" placeholder="Birthdate" required>
+        </div>
+        <div class="input">
+          <input type="text" name="Sport" placeholder="Sport" required>
+        </div>
+        <div class="input">
+          <input type="text" name="Student Number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" title="Enter a valid student number (e.g., 2021-08515-MN-0)" placeholder="Student Number" required>
+        </div>
+        <div class="input">
+          <input type="email" name="Email" placeholder="Email" required>
+        </div>
+        <div class="input">
+          <input type="password" name="Password" placeholder="Password" required>
+        </div>
+        <div class="input">
+          <input type="password" name="Confirm Password" placeholder="Confirm Password" required>
+        </div>
+        <div class="gender">
+          <span class="gender-title">Gender</span>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="Gender" value="Male">
+              Male
+            </label>
+            <label>
+              <input type="radio" name="Gender" value="Female">
+              Female
+            </label>
+            <label>
+              <input type="radio" name="Gender" value="Prefer not to say">
+              Prefer not to say
+            </label>
+          </div>
+        </div>
 
-                    <div class="reg-input">
-                        <div class ="input">
-                            <input type="text" placeholder="First Name" required>
-                        </div>
-                        <div class ="input">
-                            <input type="text" placeholder="Last Name" required>
-                        </div>
-                        <div class="input">
-                            <input type="date" placeholder="Enter birthdate" required>
-                        </div>
-                        <div class="input">
-                            <input type="text" placeholder="Sport" required>
-                        </div>
-                        <div class ="input">
-                            <input type="text" placeholder="Student Number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" title="Enter a valid student number (e.g., 2021-08515-MN-0)" required required>
-                        </div>
-                        <div class ="input">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class ="input">
-                            <input type="password" placeholder="Password" required>
-                        </div>
-                        <div class ="input">
-                            <input type="password" placeholder="Confirm Password" required>    
-                        </div>
-                        <div class="gender">
-                            <span class="gender-title">Gender</span>
-                            <div class="radio-group">
-                              <label>
-                                <input type="radio" name="gender" value="Male">
-                                Male
-                              </label>
-                              <label>
-                                <input type="radio" name="gender" value="Female">
-                                Female
-                              </label>
-                              <label>
-                                <input type="radio" name="gender" value="Prefer not to say">
-                                Prefer not to say
-                              </label>
-                            </div>
-                          </div>
-                          
-                    <label><input type="checkbox">I hereby declare that all informations provided above is true and correct</label>
+        <label><input type="checkbox" required>I hereby declare that all information provided above is true and correct</label>
 
-                    <button type="submit" class="btn2">Register</button>
-                </form>
-            </div>
-    </body>
+        <button type="submit" class="btn2">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
