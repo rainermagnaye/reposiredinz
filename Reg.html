@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <title>PUP ATHLETES</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" type="text/css" href="Design-LOGIN.css">
 </head>
 <body>
@@ -29,28 +30,28 @@
 
       <div class="reg-input">
         <div class="input">
-          <input type="text" name="First Name" placeholder="First Name" required>
+          <input type="text" name="firstname" placeholder="First Name" required>
         </div>
         <div class="input">
-          <input type="text" name="Last Name" placeholder="Last Name" required>
+          <input type="text" name="lastname" placeholder="Last Name" required>
         </div>
         <div class="input">
-          <input type="date" name="Birthdate" placeholder="Birthdate" required>
+          <input type="date" name="birthdate" placeholder="Birthdate" required>
         </div>
         <div class="input">
-          <input type="text" name="Sport" placeholder="Sport" required>
+          <input type="text" name="sport" placeholder="Sport" required>
         </div>
         <div class="input">
-          <input type="text" name="Student Number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" title="Enter a valid student number (e.g., 2021-08515-MN-0)" placeholder="Student Number" required>
+          <input type="text" name="studnum" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" title="Enter a valid student number (e.g., 2021-08515-MN-0)" placeholder="Student Number" required>
         </div>
         <div class="input">
-          <input type="email" name="Email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="input">
-          <input type="password" name="Password" placeholder="Password" required>
+          <input type="password" name="password" placeholder="Password" required>
         </div>
         <div class="input">
-          <input type="password" name="Confirm Password" placeholder="Confirm Password" required>
+          <input type="password" name="confirmpass" placeholder="Confirm Password" required>
         </div>
         <div class="gender">
           <span class="gender-title">Gender</span>
@@ -76,5 +77,20 @@
       </div>
     </form>
   </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjM7Q_dIApTOmrbMdNiMrq30CLv5eSMqweN19JdU2vmGRc3Jt-rL8CB-jUDhto1pYU/exec'
+    const form = document.forms['Index']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
